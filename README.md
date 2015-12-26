@@ -1,22 +1,22 @@
 # testassigment
 
-Сборка: mvn package
-Сборка для запуска без mysql (БД в памяти): mvn package -P h2
+РЎР±РѕСЂРєР°: mvn package
+РЎР±РѕСЂРєР° РґР»СЏ Р·Р°РїСѓСЃРєР° Р±РµР· mysql (Р‘Р” РІ РїР°РјСЏС‚Рё): mvn package -P h2
 
-Запуск: java -jar test-assigment-1.0.jar
+Р—Р°РїСѓСЃРє: java -jar test-assigment-1.0.jar
 
-Тестовая страница: http://localhost:8080/
-Пользователь и пароль: user / user
+РўРµСЃС‚РѕРІР°СЏ СЃС‚СЂР°РЅРёС†Р°: http://localhost:8080/
+РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ Рё РїР°СЂРѕР»СЊ: user / user
 
-REST операции :
-GET http://localhost:8080/rest/person - список всех людей
-GET http://localhost:8080/rest/person/{id} - данные конкретного лица
-POST http://localhost:8080/rest/person - добавление человека
-POST http://localhost:8080/rest/person/{id}/addresses - добавление адреса человеку
+REST РѕРїРµСЂР°С†РёРё :
+GET http://localhost:8080/rest/person - СЃРїРёСЃРѕРє РІСЃРµС… Р»СЋРґРµР№
+GET http://localhost:8080/rest/person/{id} - РґР°РЅРЅС‹Рµ РєРѕРЅРєСЂРµС‚РЅРѕРіРѕ Р»РёС†Р°
+POST http://localhost:8080/rest/person - РґРѕР±Р°РІР»РµРЅРёРµ С‡РµР»РѕРІРµРєР°
+POST http://localhost:8080/rest/person/{id}/addresses - РґРѕР±Р°РІР»РµРЅРёРµ Р°РґСЂРµСЃР° С‡РµР»РѕРІРµРєСѓ
 
-Создание БД и пользователя:
+РЎРѕР·РґР°РЅРёРµ Р‘Р” Рё РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ:
 create database testassigment;
 grant usage on *.* to user@localhost identified by "user";
 grant all privileges on testassigment.* to user@localhost;
 
-Приложение подключается к БД с урл: jdbc:mysql://localhost/testassigment (user/user)
+РџСЂРёР»РѕР¶РµРЅРёРµ РїРѕРґРєР»СЋС‡Р°РµС‚СЃСЏ Рє Р‘Р” СЃ СѓСЂР»: jdbc:mysql://localhost/testassigment (user/user)
