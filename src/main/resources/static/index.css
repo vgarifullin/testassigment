@@ -1,0 +1,11 @@
+.personTemplate {
+    display: none;
+}
+
+.personInfo {
+    font-weight: bold;
+}
+
+.addressList {
+    padding-left: 40px;
+}

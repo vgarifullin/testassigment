@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Persons</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+<div class="personTemplate">
+    <p class="personInfo"></p>
+    <div class="addressList">
+
+        <form class="addressForm">
+            <p><b>Add address:</b></p>
+            <label>House: <input type="text" name="houseNumber"></label>
+            <label>Street: <input type="text" name="streetName"></label>
+            <label>City: <input type="text" name="city"></label>
+            <input type="submit"/>
+        </form>
+    </div>
+    <hr/>
+</div>
+<div class="personContainer">
+</div>
+
+<form id="addPersonForm">
+    <p><b>Add person:</b></p>
+    <label>Name: <input type="text" name="name"></label>
+    <label>Age: <input type="text" name="age"></label>
+    <input type="submit"/>
+</form>
+</body>
+</html>
