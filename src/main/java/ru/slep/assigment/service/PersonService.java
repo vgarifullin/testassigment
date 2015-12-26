@@ -64,6 +64,7 @@ public class PersonService {
      * @param person  person
      * @param address address to add
      */
+    @Transactional
     public Address addAddress(Person person, Address address) {
         address.setPerson(person);
         return addressDao.save(address);
